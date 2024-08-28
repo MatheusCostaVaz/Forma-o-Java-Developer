@@ -1,4 +1,7 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
 //abstract não permite fazer um new, apenas os filhos, que no caso são conta corrente e conta poupança
 public abstract class Conta implements IConta {
 
@@ -10,6 +13,8 @@ public abstract class Conta implements IConta {
     protected int numero;
     protected double saldo;
     protected Cliente cliente;
+
+    private static List<Conta> contas = new ArrayList<>();
 
     //Getters e Setters
     public int getAgencia() {
@@ -55,5 +60,5 @@ public abstract class Conta implements IConta {
         System.out.printf(String.format("\nSaldo: %.2f", this.saldo));
     }
 
-    
+
 }

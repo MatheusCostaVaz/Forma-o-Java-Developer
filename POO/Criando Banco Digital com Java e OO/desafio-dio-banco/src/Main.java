@@ -12,7 +12,6 @@ public class Main {
         Conta cp = new ContaPoupanca(matheus);
 
         cc.transferir(cp, 33.25);
-        
 
         cc.imprimirExtrato();
         cp.imprimirExtrato();
